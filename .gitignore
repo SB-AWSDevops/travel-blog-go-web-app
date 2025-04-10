@@ -23,4 +23,5 @@ go.work.sum
 
 awscliv2.zip
 
-./aws
+
+aws/
