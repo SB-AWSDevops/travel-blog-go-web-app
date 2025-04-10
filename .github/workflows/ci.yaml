@@ -24,7 +24,7 @@ on:
           run: go build -o go-web-app
 
         - name: Test 
-          run: go test ./...  # Run all tests in the project
+          run: go test ./...  # Run all tests in the project-)
 
       code-quality:
         runs-on: ubuntu-latest
