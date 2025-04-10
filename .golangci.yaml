@@ -1,7 +1,6 @@
 run:
-  go: "1.23"
   timeout: 5m
-
+  go: "1.23"
 
 linters:
   disable-all: true
@@ -15,5 +14,3 @@ linters:
 
 issues:
   exclude-use-default: false
-
-

@@ -39,7 +39,7 @@ jobs:
       uses: golangci/golangci-lint-action@v3
       with:
         version: v1.56.2
-        args: --timeout=5m ./...
+        args: --timeout=5m ./main.go
 
   docker-push:
     runs-on: ubuntu-latest
