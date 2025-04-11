@@ -7,61 +7,87 @@
     <title>Wander Vibes</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #ffffff;
+            color: #2e7d32;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
+            background-color: #2e7d32;
+            color: white;
+            padding: 15px 30px;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
+        .nav-left, .nav-right {
+            display: flex;
+            gap: 20px;
         }
 
-        nav ul li a {
-            color: #fff;
+        .nav-center {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
             text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         main {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
         }
 
         section {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #2e7d32;
+            text-decoration: underline;
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #2e7d32;
+            color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 15px;
+            margin-top: 40px;
         }
-    </style>    
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="destinations">Destinations</a></li>
-                <li><a href="gallery">Gallery</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
+            <div class="nav-left">
+                <a href="home">Home</a>
+                <a href="destinations">Destinations</a>
+            </div>
+            <div class="nav-center">Wander Vibes</div>
+            <div class="nav-right">
+                <a href="gallery">Gallery</a>
+                <a href="contact">Contact</a>
+            </div>
         </nav>
     </header>
 
@@ -73,7 +99,7 @@
 
         <section>
             <h2>Top Destinations</h2>
-            <p>From the snowy peaks of Himachal to the serene beaches of Bali — I've documented it all. Check out our handpicked travel destinations <a href="destinations">destinations</a> for inspiration.</p>
+            <p>From the snowy peaks of Himachal to the serene beaches of Bali — I've documented it all. Check out our handpicked travel <a href="destinations">destinations</a> for inspiration.</p>
         </section>
 
         <section>
