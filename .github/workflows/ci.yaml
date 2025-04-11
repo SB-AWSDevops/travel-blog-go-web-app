@@ -3,8 +3,11 @@ name: CI/CD
 
 on:
   push:
-    branches:
-      - main
+  paths:
+    - 'src/**'  # only trigger CI on app code changes
+  branches:
+    - main
+
     # paths-ignore:
     #   - 'helm/**'
     #   - 'k8s/**'
