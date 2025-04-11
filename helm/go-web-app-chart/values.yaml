@@ -8,7 +8,7 @@ image:
   repository: premdaas/go-web-app
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "14396098205"
+  tag: "14396117331"
 
 
 ingress:
