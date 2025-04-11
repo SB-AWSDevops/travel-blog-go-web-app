@@ -19,9 +19,9 @@ func destinationsPage(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "static/destinations.html")
 }
 
-func galleryPage(w http.ResponseWriter, r *http.Request) {
+func aboutMePage(w http.ResponseWriter, r *http.Request) {
 	// Render the gallery html page
-	http.ServeFile(w, r, "static/gallery.html")
+	http.ServeFile(w, r, "static/aboutme.html")
 }
 
 func contactPage(w http.ResponseWriter, r *http.Request) {
@@ -36,7 +36,7 @@ func main() {
 
 	http.HandleFunc("/home", homePage)
 	http.HandleFunc("/destinations", destinationsPage)
-	http.HandleFunc("/gallery", galleryPage)
+	http.HandleFunc("/aboutme", aboutMePage)
 	http.HandleFunc("/contact", contactPage)
 
 	err := http.ListenAndServe("0.0.0.0:8081", nil)
