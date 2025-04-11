@@ -44,6 +44,8 @@ jobs:
       with:
         version: v1.56.2
         args: --timeout=5m ./main.go
+      env:
+        GOVERSION: 1.22
   
   push:
     runs-on: ubuntu-latest
