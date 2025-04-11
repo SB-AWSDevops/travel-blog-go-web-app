@@ -47,7 +47,7 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $GITHUB_WORKSPACE/bin v1.56.2
           echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
 
-      - name: Lint
+      - name: Code-Quality
         run: golangci-lint run --timeout=5m
         
   
