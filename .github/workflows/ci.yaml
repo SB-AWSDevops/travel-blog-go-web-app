@@ -3,15 +3,14 @@ name: CI/CD
 
 on:
   push:
-  paths:
-    - 'src/**'  # only trigger CI on app code changes
-  branches:
-     - main
-
-  paths-ignore:
-     - 'helm/**'
-     - 'k8s/**'
-     - 'README.md'
+    branches:
+      - main
+    paths:
+      - 'src/**'  # only trigger CI on app code changes
+    paths-ignore:
+      - 'helm/**'
+      - 'k8s/**'
+      - 'README.md'
 
 jobs:
   build:
@@ -101,5 +100,5 @@ jobs:
       - name: Commit and push changes
         run: |
           git add helm/go-web-app-chart/values.yaml
-          git commit -m "Update tag in Helm chart"
+          git commit -m "Update tag in Helm chart [skip ci]"
           git push origin main
