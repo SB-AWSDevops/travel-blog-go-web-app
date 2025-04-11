@@ -1,92 +1,147 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Travel Destinations | Wander Vibes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
 
-<html>
-    <head>
-        <title>Top Travel Destinations</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+    header {
+      background-color: #222;
+      padding: 15px 0;
+      text-align: center;
+    }
 
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
 
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
 
-            main {
-                padding: 20px;
-            }
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-            section {
-                margin-bottom: 20px;
-            }
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+      color: #444;
+    }
 
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="destinations">Destinations</a></li>
-                    <li><a href="gallery">Gallery</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 30px;
+      color: #555;
+    }
 
-        <main>
-            <section>
-                <h1>Top Travel Destinations</h1>
-                <p>Discover some of the most breathtaking destinations I've explored across the globe. Whether you're into mountains, beaches, cities, or forests — there's something for everyone here.</p>
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
 
-                <h2>Must-Visit Places</h2>
-                <p><a href="https://en.wikipedia.org/wiki/Leh">Leh-Ladakh, India</a> – A paradise for bikers and trekkers.</p>
-                <p><a href="https://en.wikipedia.org/wiki/Bali">Bali, Indonesia</a> – Island of gods, culture, and scenic beauty.</p>
-                <p><a href="https://en.wikipedia.org/wiki/Santorini">Santorini, Greece</a> – White houses, blue domes, and stunning sunsets.</p>
-                <p><a href="https://en.wikipedia.org/wiki/Swiss_Alps">Swiss Alps, Switzerland</a> – Perfect for snow lovers and scenic rail rides.</p>
-                <p><a href="https://en.wikipedia.org/wiki/Japan">Japan</a> – A balance of tradition, technology, and cherry blossoms.</p>
+    a {
+      color: #0077cc;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s ease-in-out;
+    }
 
-                <h2>Travel Series</h2>
-                <p><a href="https://www.youtube.com/@SurisettyTravels/featured">Backpacking India Series</a></p>
-                <p><a href="https://www.youtube.com/@SurisettyTravels/featured">Island Escapes Series</a></p>
-                <p><a href="https://www.youtube.com/@SurisettyTravels/featured">Europe Train Adventure Series</a></p>
+    a:hover {
+      color: #ff6600;
+      border-bottom: 1px solid #ff6600;
+    }
 
-                <h2>Hidden Gems</h2>
-                <p><a href="https://en.wikipedia.org/wiki/Meghalaya">Meghalaya, India</a> – Living root bridges and mystical waterfalls.</p>
-                <p><a href="https://en.wikipedia.org/wiki/Phong_Nha-Kẻ_Bàng_National_Park">Phong Nha, Vietnam</a> – Underground caves like never before.</p>
-            </section>
-        </main>
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 0.95rem;
+    }
 
-        <footer>
-            <p>&copy; 2025 Wander Vibes by Surisetty</p>
-        </footer>
-    </body>
+    @media (max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      main {
+        padding: 25px;
+      }
+
+      footer {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="destinations">Destinations</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Top Travel Destinations</h1>
+      <p>Discover some of the most breathtaking destinations I've explored across the globe. Whether you're into mountains, beaches, cities, or forests — there's something for everyone here.</p>
+
+      <h2>Must-Visit Places</h2>
+      <p><a href="https://en.wikipedia.org/wiki/Leh" target="_blank">Leh-Ladakh, India</a> – A paradise for bikers and trekkers.</p>
+      <p><a href="https://en.wikipedia.org/wiki/Bali" target="_blank">Bali, Indonesia</a> – Island of gods, culture, and scenic beauty.</p>
+      <p><a href="https://en.wikipedia.org/wiki/Santorini" target="_blank">Santorini, Greece</a> – White houses, blue domes, and stunning sunsets.</p>
+      <p><a href="https://en.wikipedia.org/wiki/Swiss_Alps" target="_blank">Swiss Alps, Switzerland</a> – Perfect for snow lovers and scenic rail rides.</p>
+      <p><a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Japan</a> – A balance of tradition, technology, and cherry blossoms.</p>
+
+      <h2>Travel Series</h2>
+      <p><a href="https://www.youtube.com/@SurisettyTravels/featured" target="_blank">Backpacking India Series</a></p>
+      <p><a href="https://www.youtube.com/@SurisettyTravels/featured" target="_blank">Island Escapes Series</a></p>
+      <p><a href="https://www.youtube.com/@SurisettyTravels/featured" target="_blank">Europe Train Adventure Series</a></p>
+
+      <h2>Hidden Gems</h2>
+      <p><a href="https://en.wikipedia.org/wiki/Meghalaya" target="_blank">Meghalaya, India</a> – Living root bridges and mystical waterfalls.</p>
+      <p><a href="https://en.wikipedia.org/wiki/Phong_Nha-Kẻ_Bàng_National_Park" target="_blank">Phong Nha, Vietnam</a> – Underground caves like never before.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wander Vibes by Surisetty</p>
+  </footer>
+</body>
 </html>
