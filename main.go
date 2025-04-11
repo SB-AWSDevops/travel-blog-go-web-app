@@ -3,7 +3,13 @@ package main
 import (
 	"log"
 	"net/http"
+	"embed"
 )
+
+
+//go:embed static/*
+var staticFiles embed.FS
+
 
 func homePage(w http.ResponseWriter, r *http.Request) {
 	// Render the home html page from static folder
@@ -26,6 +32,10 @@ func contactPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+
+
+	fs := http.FileServer(http.FS(staticFiles))
+	http.Handle("/", fs)
 
 	http.HandleFunc("/home", homePage)
 	http.HandleFunc("/destinations", destinationsPage)
