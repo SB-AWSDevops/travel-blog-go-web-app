@@ -6,12 +6,12 @@ on:
   paths:
     - 'src/**'  # only trigger CI on app code changes
   branches:
-    - main
+     - main
 
   paths-ignore:
-    - 'helm/**'
-    - 'k8s/**'
-    - 'README.md'
+     - 'helm/**'
+     - 'k8s/**'
+     - 'README.md'
 
 jobs:
   build:
