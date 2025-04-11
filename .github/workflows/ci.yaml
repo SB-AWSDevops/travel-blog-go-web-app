@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'src/**'  # Only trigger CI when app source code changes
 jobs:
   build:
     runs-on: ubuntu-latest
