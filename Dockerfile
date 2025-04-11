@@ -14,7 +14,8 @@ FROM gcr.io/distroless/base
 
 WORKDIR /app
 
-COPY --from=base /app/main .
+COPY --from=base /app/main /app
+COPY --from=base /app/static /app/static
 
 EXPOSE 8081
 
