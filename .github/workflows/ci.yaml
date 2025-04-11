@@ -8,10 +8,10 @@ on:
   branches:
     - main
 
-    # paths-ignore:
-    #   - 'helm/**'
-    #   - 'k8s/**'
-    #   - 'README.md'
+  paths-ignore:
+    - 'helm/**'
+    - 'k8s/**'
+    - 'README.md'
 
 jobs:
   build:
